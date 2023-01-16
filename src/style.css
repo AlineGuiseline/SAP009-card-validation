@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Tirar as setinhas do input*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+}
+
+#candle-logo {
+  width: 5%;
+  height: 10%;
+  position: absolute;
+  margin-left: 7%;
+  margin-top: -1.5%;
+  transition: transform .2s;
+}
+
+#candle-logo:hover {
+  transform: scale(1.2);
+}
+
+.header-links {
+  margin: 2% 0 0 50%;
+  cursor: pointer;
+  color: #df89b5;
+  font-size: 120%;
+}
+
+.individual-links {
+  margin-right: 5%;
+  font-weight: 600;
+  
+}
+
+.individual-links:hover {
+  opacity: 0.7;
+}
+
+.individual-links:active {
+  opacity: 0.5;
+}
+
+.btn-login {
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  padding: 1.5%;
+  width: 25%;
+  background-color: #CFA3C8;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 80%;
+}
+
+.btn-login:hover {
+  opacity: 0.7;
+}
+
+.btn-login:active {
+  opacity: 0.5;
+}
+
+.wrapper {
+  background-color: #f5ecec;
+  margin: 1% 5% 2% 5%;
+}
+
+.container-left {
+  display: inline-block;
+  height: 100vh;
+  width: 50%;
+  padding-left: 10%;
+  margin-top: 5%;
+}
+
+.container-right {
+  display: inline-block;
+  height: 100vh;
+  width: 50%; 
+  position: absolute;
+  padding-left: 7%;
+  margin-top: 5%;
+}
+
+
+p {
+  text-align: justify;
+  width: 80%;
+}
+
+#p-heart {
+  color: #CFA3C8;
+}
+
+.candles-img {
+  width: 50%;
+  height: 60%;
+  position: relative;
+  margin-left: 10%;
+}
+
+form {
+  color: #CFA3C8;
+  font-weight: 600;
+}
+
+#btn-validate {
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  padding: 1.5%;
+  width: 25%;
+  background-color: #CFA3C8;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 90%;
+
+  position: relative;
+  margin-top: 4%;
+}
+
+#btn-validate:hover {
+  opacity: 0.7;
+}
+
+#btn-validate:active {
+  opacity: 0.5;
+}
+
+.card {
+  position: relative;
+    width: 65%;
+    height: 35%;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    margin-top: 6%;
+    background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+}
+
+#card-number {
+  position: relative;
+  margin-top: 35%;
+}
+
+.footer-lab {
+  text-align: center;
+  padding-bottom: 1%;
+  color: #FFFFFF;
+}
+
+#footer-heart {
+  color: #bfd9fe;
+}
