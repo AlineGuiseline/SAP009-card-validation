@@ -13,11 +13,11 @@ const alertCard = document.getElementById("cardResult"); //Vai pegar o parágraf
 btnCard.addEventListener('click', cardValidator);
 
 function cardValidator() {
-  const numCard = document.getElementById("number").value; //Vai pegar o valor do input do número do cartão
-  const finalResult = validator.isValid(numCard); //Vai linkar com a "fórmula" usada no validator.js
-  const maskedNumbers = validator.maskify(numCard) //Também vai linkar com a fórmula usada no validator.js
+  const creditCardNumber = document.getElementById("number").value; //Vai pegar o valor do input do número do cartão
+  const finalResult = validator.isValid(creditCardNumber); //Vai linkar com a "fórmula" usada no validator.js
+  const maskedNumbers = validator.maskify(creditCardNumber) //Também vai linkar com a fórmula usada no validator.js
 
-  if (numCard === "") {
+  if (creditCardNumber === "") {
     return alertCard.innerText = "Por favor, digite o número do cartão"; //O .innerText vai inserir um texto ao parágrafo vazio
   } else if (finalResult === true) {
     return alertCard.innerText = "Oba!! O seu cartão de número " + maskedNumbers + " está válido e nós prosseguiremos com a sua compra ❤";

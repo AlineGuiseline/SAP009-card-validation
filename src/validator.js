@@ -1,11 +1,11 @@
 const validator = {
 
   //      1- Receber os dados do usuário
-  isValid (cardNumber) {
+  isValid (creditCardNumber) {
     const newArray = []; //Cria um array vazio para receber os dados que o usuário colocar
-    for(let i = 0; i < cardNumber.length; i++) {
-      const numCard = parseInt(cardNumber[i]); //O parseInt analisa a string e retorna um número, o que evita erros de concatenação
-      newArray.push(numCard) //O .push adiciona novos elementos no final do array; ou seja, os números que serão recebidos no input serão alinhados aqui
+    for(let i = 0; i < creditCardNumber.length; i++) {
+      const numCard = parseInt(creditCardNumber[i]); //O parseInt analisa a string e retorna um número, o que evita erros de concatenação
+      newArray.push(numCard) //O .push adiciona novos elementos ao array; ou seja, os números que serão recebidos no input serão alinhados aqui
     }
 
     //     2- Inverter a ordem dos números
@@ -40,8 +40,21 @@ const validator = {
     }
   },
 
-  maskify (cardNumber){ //Método similar ao do isValid
-    return cardNumber.replace(/.(?=.{4})/g, "#") //Pesquisando sobre como mascarar os dígitos encontrei o conceito de RegEx (esse já estava pronto), que são padrões usados para selecionar combinações de caracteres em uma string
+  /* maskify (creditCardNumber){
+    return creditCardNumber.replace(/.(?=.{4})/g, "*") //Pesquisando sobre como mascarar os dígitos encontrei o conceito de RegEx (esse já estava pronto), que são padrões usados para selecionar combinações de caracteres em uma string
+  }*/
+
+  maskify (creditCardNumber){
+    const maskNumber = []; //Array vazio para receber os dados que não temos de antemão (usuário que vai informar)
+    for (let i = 0; i < creditCardNumber.length; i++) {
+      if(i < creditCardNumber.length - 4) { //Isso vai "isolar" os 4 últimos números (testei com === e > e não funcionou), que são os que nós precisamos
+        maskNumber.push("#"); //Vai substituir os números por # até chegar aos 4 dígitos finais
+      } else {
+        maskNumber.push(creditCardNumber[i]) //Vai manter os números normais
+      }
+    }
+    const masked = maskNumber.join("");
+    return masked;
   }
 }
 
