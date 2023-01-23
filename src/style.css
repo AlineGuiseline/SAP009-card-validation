@@ -86,13 +86,6 @@ body {
   margin-top: 3%;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-
 p {
   text-align: justify;
   width: 80%;
@@ -116,7 +109,7 @@ p {
   background-color: #C2CFF5;
   width: 65%;
   border-radius: 7%;
-  padding: 5% 0 5% 15%;
+  padding: 5% 0 5% 17%;
 }
 
 #name-input {
