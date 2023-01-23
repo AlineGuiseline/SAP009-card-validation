@@ -178,19 +178,16 @@ p {
 }
 
 #card-number {
-  margin-top: 5%;
-  margin-right: 40%;
+  margin: 5% 40% 0 0;
 }
 
 .test {
-  margin-top: 3%;
-  margin-right: 40%;
+  margin: 3% 40% 0 0;
 }
 
 
 #card-name {
-  margin-top: 3%;
-  margin-right: 40%;
+  margin: 3% 40% 0 0;
 }
 
 .chip {
