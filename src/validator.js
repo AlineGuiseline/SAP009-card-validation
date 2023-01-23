@@ -41,7 +41,7 @@ const validator = {
   },
 
   /* maskify (creditCardNumber){
-    return creditCardNumber.replace(/.(?=.{4})/g, "*") //Pesquisando sobre como mascarar os dígitos encontrei o conceito de RegEx (esse já estava pronto), que são padrões usados para selecionar combinações de caracteres em uma string
+    return creditCardNumber.replace(/.(?=.{4})/g, "#") //Pesquisando sobre como mascarar os dígitos encontrei o conceito de RegEx (esse já estava pronto), que são padrões usados para selecionar combinações de caracteres em uma string
   }*/
 
   maskify (creditCardNumber){

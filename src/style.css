@@ -56,16 +56,17 @@ body {
 }
 
 .btn-login:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .btn-login:active {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .wrapper {
   background-color: #f5ecec;
   margin: 1% 5% 2% 5%;
+  padding-bottom: 2%;
 }
 
 .container-left {
@@ -73,7 +74,7 @@ body {
   height: 100vh;
   width: 50%;
   padding-left: 10%;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .container-right {
@@ -82,7 +83,7 @@ body {
   width: 50%; 
   position: absolute;
   padding-left: 7%;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 input::-webkit-outer-spin-button,
@@ -95,6 +96,7 @@ input::-webkit-inner-spin-button {
 p {
   text-align: justify;
   width: 80%;
+  color: #313131;
 }
 
 #p-heart {
@@ -108,9 +110,18 @@ p {
   margin-left: 10%;
 }
 
-form {
-  color: #CFA3C8;
+#form {
+  color: #bd7eb2; 
   font-weight: 600;
+  background-color: #C2CFF5;
+  width: 65%;
+  border-radius: 7%;
+  padding: 5% 0 5% 15%;
+}
+
+#name-input {
+  color: #313131;
+  height: 5%;
 }
 
 #btnValidate {
@@ -123,33 +134,72 @@ form {
   color: #FFFFFF;
   font-weight: 600;
   font-size: 90%;
-
   position: relative;
-  margin-top: 4%;
+  margin-top: 5%;
+  margin-left: 20%;
 }
 
-#btn-validate:hover {
+#btnValidate:hover {
+  opacity: 0.8;
+}
+
+#btnValidate:active {
   opacity: 0.7;
 }
 
-#btn-validate:active {
-  opacity: 0.5;
+#cardResult {
+  color: #313131;
 }
 
 .card {
+  width: 65%;
+  height: 35%;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  margin-top: 6%;
+  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa, 1px 1px 2px #555;
+  backdrop-filter: blur(0.8rem);
+  padding: 1.5rem;
+  border-radius: 1rem;
   position: relative;
-    width: 65%;
-    height: 35%;
-    text-align: center;
-    border-radius: 20px;
-    border: none;
-    margin-top: 6%;
-    background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+}
+
+.card-clone {
+  background: transparent;
+  border: none;
+  color: #313131;;
+  font-size: 100%;
+}
+
+.card-clone::-webkit-input-placeholder {
+  color: #313131;;
 }
 
 #card-number {
-  position: relative;
-  margin-top: 35%;
+  margin-top: 5%;
+  margin-right: 40%;
+}
+
+.test {
+  margin-top: 3%;
+  margin-right: 40%;
+}
+
+
+#card-name {
+  margin-top: 3%;
+  margin-right: 40%;
+}
+
+.chip {
+  display: flex;
+  margin-left: 80%;
+}
+
+#card-chip img {
+  width: 3rem;
 }
 
 .footer-lab {
@@ -159,5 +209,5 @@ form {
 }
 
 #footer-heart {
-  color: #bfd9fe;
+  color: #C2CFF5;
 }

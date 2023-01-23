@@ -40,33 +40,35 @@
 
         <form id="form">
           <label for="name">Nome do titular:</label><br>
-          <input type="text" id="name" name="name" autocomplete="off" placeholder="Nome do titular"><br>
+          <input type="text" id="name" autocomplete="off" placeholder="ex.: Maria da Silva"><br>
           <label for="expiry">Data de validade:</label><br>
-          <input type="text" id="expiry" name="expiry" maxlength="5" pattern="[0,9]" autocomplete="off" placeholder="mm/aa"><br>
+          <input type="text" id="expiry" maxlength="5" pattern="[0,9]" autocomplete="off" placeholder="mm/aa"><br>
           <label for="cvv">CVV:</label><br>
-          <input type="text" id="cvv" name="cvv" maxlength="3" autocomplete="off" placeholder="***"><br>
+          <input type="text" id="cvv" maxlength="3" autocomplete="off" placeholder="***"><br>
           <label for="number">Número do cartão:</label><br>
-          <input type="number" id="number" name="number" value="number" pattern="[0,9]" max="16" autocomplete="off" placeholder="0000 0000 0000 0000"><br>
+          <input type="number" id="number" value="number" pattern="[0,9]" max="16" autocomplete="off" placeholder="0000 0000 0000 0000"><br>
         </form>
-          
-        <button type="submit" id="btnValidate">Validar</button><br><br>
-        <p id="cardResult"></p>
 
-        <div class="card">
+        <button type="submit" id="btnValidate">Validar</button><br>
+        <br><p id="cardResult"></p>
+
+
+       <div class="card">
+        <div class="chip" id="card-chip"><img src="./chip.svg" alt="chip"/></div>
           <input class="card-clone" id="card-number" placeholder="0000 0000 0000 0000" disabled>
-          <input class="card-clone" placeholder="00/00" disabled>
-          <input class="card-clone" placeholder="***" disabled>
-          <input class="card-clone" disabled>
+          <div class="test">
+          <input class="card-clone" id="card-expiry" placeholder="MM/AA" disabled>
+          <input class="card-clone" id="card-cvv" placeholder="***" disabled>
         </div>
-        
+          <input class="card-clone" id="card-name" placeholder="Maria da Silva" disabled>
+      </div>
       </section>
     </div>
 
     <footer>
       <h3 class="footer-lab">Feito com <span id="footer-heart">❤</span> por Aline Guiseline</h3>
     </footer>
-    
-    <script src="index.js" type="module"></script>
 
+    <script src="index.js" type="module"></script>
   </body>
 </html>
