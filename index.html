@@ -2,13 +2,75 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Validador de cartão</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./candle-logo.png"/>
   </head>
+
   <body>
-    <header></header>
-    <main><h1>Hello world</h1></main>
-    <footer></footer>
+    <header>
+    <img src="./candle-logo.png" id="candle-logo" alt="logo da loja">
+
+      <div class="header-links">
+        <a class="individual-links">Home</a>
+        <a class="individual-links">Produtos</a>
+        <a class="individual-links">Sobre nós</a>
+        <a class="individual-links">Blog</a>
+        <button class="btn-login">Logout</button>
+      </div>
+    </header>
+
+    <div class="wrapper">
+    <section class="container-left">
+      <p>Olá <span id="p-heart">❤</span>
+        <br>
+        Estamos muito felizes com a sua compra! Todos os nossos produtos são 100% artesanais, o que nos permite colocar todo o nosso amor em cada um deles. Esperamos que você aproveite ao máximo e tenha bons momentos desfrutando das nossas fragrâncias exclusivas!
+        <br>
+        Antes de tudo, apenas precisamos confirmar os dados do seu cartão, mas não se preocupe - o nosso site é 100% seguro!
+      </p>
+      <br>
+      
+      <img class="candles-img" src="./candles.jpg" alt="velas de flores">
+      </section>
+
+      <section class="container-right">
+
+        <form id="form">
+          <label for="name">Nome do titular:</label><br>
+          <input type="text" id="name" autocomplete="off" placeholder="ex.: Maria da Silva"><br>
+          <label for="expiry">Data de validade:</label><br>
+          <input type="text" id="expiry" maxlength="5" pattern="[0,9]" autocomplete="off" placeholder="mm/aa"><br>
+          <label for="cvv">CVV:</label><br>
+          <input type="text" id="cvv" maxlength="3" autocomplete="off" placeholder="***"><br>
+          <label for="number">Número do cartão:</label><br>
+          <input type="number" id="number" value="number" pattern="[0,9]" max="16" autocomplete="off" placeholder="0000 0000 0000 0000"><br>
+        </form>
+
+        <button type="submit" id="btnValidate">Validar</button><br>
+        <br><p id="cardResult"></p>
+
+
+       <div class="card">
+        <div class="chip" id="card-chip"><img src="./chip.svg" alt="chip"/></div>
+          <input class="card-clone" id="card-number" placeholder="0000 0000 0000 0000" disabled>
+          <div class="test">
+          <input class="card-clone" id="card-expiry" placeholder="MM/AA" disabled>
+          <input class="card-clone" id="card-cvv" placeholder="***" disabled>
+        </div>
+          <input class="card-clone" id="card-name" placeholder="Maria da Silva" disabled>
+      </div>
+      <div class="card__brand"><i id="cardBrand"></i></div>
+
+      </section>
+    </div>
+
+    <footer>
+      <h3 class="footer-lab">Feito com <span id="footer-heart">❤</span> por Aline Guiseline</h3>
+    </footer>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

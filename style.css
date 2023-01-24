@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+}
+
+#candle-logo {
+  width: 5%;
+  height: 10%;
+  position: absolute;
+  margin-left: 7%;
+  margin-top: -1.5%;
+  transition: transform .2s;
+}
+
+#candle-logo:hover {
+  transform: scale(1.2);
+}
+
+.header-links {
+  margin: 2% 0 0 50%;
+  cursor: pointer;
+  color: #df89b5;
+  font-size: 120%;
+}
+
+.individual-links {
+  margin-right: 5%;
+  font-weight: 600;
+  
+}
+
+.individual-links:hover {
+  opacity: 0.7;
+}
+
+.individual-links:active {
+  opacity: 0.5;
+}
+
+.btn-login {
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  padding: 1.5%;
+  width: 25%;
+  background-color: #CFA3C8;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 80%;
+}
+
+.btn-login:hover {
+  opacity: 0.8;
+}
+
+.btn-login:active {
+  opacity: 0.7;
+}
+
+.wrapper {
+  background-color: #f5ecec;
+  margin: 1% 5% 2% 5%;
+  padding-bottom: 2%;
+}
+
+.container-left {
+  display: inline-block;
+  height: 100vh;
+  width: 50%;
+  padding-left: 10%;
+  margin-top: 3%;
+}
+
+.container-right {
+  display: inline-block;
+  height: 100vh;
+  width: 50%; 
+  position: absolute;
+  padding-left: 7%;
+  margin-top: 3%;
+}
+
+p {
+  text-align: justify;
+  width: 80%;
+  color: #313131;
+}
+
+#p-heart {
+  color: #CFA3C8;
+}
+
+.candles-img {
+  width: 50%;
+  height: 60%;
+  position: relative;
+  margin-left: 10%;
+}
+
+#form {
+  color: #bd7eb2; 
+  font-weight: 600;
+  background-color: #C2CFF5;
+  width: 65%;
+  border-radius: 7%;
+  padding: 5% 0 5% 17%;
+}
+
+#name-input {
+  color: #313131;
+  height: 5%;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#btnValidate {
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  padding: 1.5%;
+  width: 25%;
+  background-color: #CFA3C8;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 90%;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+#btnValidate:hover {
+  opacity: 0.8;
+}
+
+#btnValidate:active {
+  opacity: 0.7;
+}
+
+#cardResult {
+  color: #313131;
+}
+
+.card {
+  width: 65%;
+  height: 35%;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  margin-top: 6%;
+  background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa, 1px 1px 2px #555;
+  backdrop-filter: blur(0.8rem);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.card-clone {
+  background: transparent;
+  border: none;
+  color: #313131;;
+  font-size: 100%;
+}
+
+.card-clone::-webkit-input-placeholder {
+  color: #313131;;
+}
+
+#card-number {
+  margin: 5% 40% 0 0;
+}
+
+.test {
+  margin: 3% 40% 0 0;
+}
+
+
+#card-name {
+  margin: 3% 40% 0 0;
+}
+
+.chip {
+  display: flex;
+  margin-left: 80%;
+}
+
+#card-chip img {
+  width: 3rem;
+}
+
+.footer-lab {
+  text-align: center;
+  padding-bottom: 1%;
+  color: #FFFFFF;
+}
+
+#footer-heart {
+  color: #C2CFF5;
+}
