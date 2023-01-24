@@ -2,6 +2,8 @@
 
 Projeto criado junto ao bootcamp da Laboratória, com o objetivo de verificar cartões de crédito, simulando a área de compra de uma loja de velas. 
 
+🔗 [Clique aqui para acessar](https://alineguiseline.github.io/card-validation-candle-store/)
+
 ## Índice
 
 * [1. Introdução](#1-Introdução)
