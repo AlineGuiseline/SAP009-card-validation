@@ -55,15 +55,22 @@ Foram pensadas 4 situações possíveis para este contexto, bem como 4 respostas
 ## 3. Objetivos alcançados
 
 ✨ Criação de uma plataforma que permita ao usuário inserir o número do seu cartão de crédito e validá-lo
+
 ✨ Ocultação de todos os dígitos do cartão, com exceção dos 4 últimos
+
 ✨ Conhecer e trabalhar com as ferramentas de manutenção e melhoria no código (linters e testes unitários)
+
 ✨ Planejar e construir uma interface pensada no usuário, pautada, principalmente, na sua experiência
+
 ✨ Implementação de controle de versão com Git e Github
 
 ## 4. Ferramentas utlizadas
 🛠️ HTML
+
 🛠️ CSS
+
 🛠️ JavaScript
+
 🛠️ Git/Github
 
 ## 5. Contato
