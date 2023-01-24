@@ -18,11 +18,13 @@ function cardValidator() {
   const maskedNumbers = validator.maskify(creditCardNumber) //Também vai linkar com a fórmula usada no validator.js
 
   if (creditCardNumber === "") {
-    return alertCard.innerText = "Por favor, digite o número do seu cartão"; //O .innerText vai inserir um texto ao parágrafo vazio
+    return alertCard.innerText = "Por favor, digite o número do seu cartão."; //O .innerText vai inserir um texto ao parágrafo vazio
+  } else if (creditCardNumber.length <= 13) {
+    return alertCard.innerText = "Ops. Faltam alguns dígitos no número do seu cartão. Favor verificar.";
   } else if (finalResult === true) {
     return alertCard.innerText = "Oba!! O seu cartão de número " + maskedNumbers + " está válido e nós prosseguiremos com a sua compra ❤";
   } else {
-    return alertCard.innerText = "Infelizmente, o seu cartão de número " + maskedNumbers + " não está válido. Favor verificar";
+    return alertCard.innerText = "Infelizmente, o seu cartão de número " + maskedNumbers + " não está válido. Favor verificar.";
   }
 }
 
