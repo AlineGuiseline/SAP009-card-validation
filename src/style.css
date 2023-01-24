@@ -117,6 +117,12 @@ p {
   height: 5%;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 #btnValidate {
   cursor: pointer;
   border-radius: 20px;
@@ -190,6 +196,15 @@ p {
 
 #card-chip img {
   width: 3rem;
+}
+
+.card__brand {
+  font-size: 3rem;
+  color: #fff;
+  min-width: 100px;
+  min-height: 75px;
+  text-align: right;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .footer-lab {
