@@ -44,9 +44,6 @@ function cloneCardNumber() {
   const mask = validator.maskify(value);
 
   document.getElementById("card-number").value = mask;
-
-  document.getElementById("card-date").value
-  document.getElementById("card-cvv").value
 }
 
 function cloneCardName() {

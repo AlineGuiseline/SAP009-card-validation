@@ -17,7 +17,7 @@ const validator = {
     //       4.1- Se a soma der um número maior do que 9, pegar esse resultado e subtrair 9
 
     for (let i = 0; i < cardNumReverse.length; i++) {
-      if ((i + 1) % 2 === 0) { //Esse i+1 vai dizer ao JS que ele precisa começar do segundo elemento (se colocarmos só i % 2 === 0, ele vai começar do primeiro)
+      if ((i + 1) % 2 === 0) { //Esse i+1 vai dizer ao JS que ele precisa começar do segundo elemento
         cardNumReverse[i] = cardNumReverse[i] * 2; //Agora ele vai pegar cada posição par (indicada pelo [i]) e vai multiplicar por 2
       }
       if (cardNumReverse[i] >= 10) {
@@ -40,14 +40,10 @@ const validator = {
     }
   },
 
-  /* maskify (creditCardNumber){
-    return creditCardNumber.replace(/.(?=.{4})/g, "#") //Pesquisando sobre como mascarar os dígitos encontrei o conceito de RegEx (esse já estava pronto), que são padrões usados para selecionar combinações de caracteres em uma string
-  }*/
-
   maskify (creditCardNumber){
     const maskNumber = []; //Array vazio para receber os dados que não temos de antemão (usuário que vai informar)
     for (let i = 0; i < creditCardNumber.length; i++) {
-      if(i < creditCardNumber.length - 4) { //Isso vai "isolar" os 4 últimos números (testei com === e > e não funcionou), que são os que nós precisamos
+      if(i < creditCardNumber.length - 4) { //Isso vai "isolar" os 4 últimos números, que são os que nós precisamos
         maskNumber.push("#"); //Vai substituir os números por # até chegar aos 4 dígitos finais
       } else {
         maskNumber.push(creditCardNumber[i]) //Vai manter os números normais
