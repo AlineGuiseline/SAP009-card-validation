@@ -208,7 +208,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #C2CFF5;
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1900px) {
   
   body {
     padding-bottom: 1%;
@@ -219,7 +219,7 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 10%;
     position: absolute;
     margin-left: 7%;
-    margin-top: -1.6%;
+    margin-top: -1.7%;
     transition: transform .2s;
   }
 
@@ -227,44 +227,61 @@ input[type="number"]::-webkit-inner-spin-button {
     transform: scale(1.1);
   }
 
+  .header-links {
+    margin: 2% 0 0 57%;
+    font-size: 140%;
+  }
+  
+  .individual-links {
+    margin-right: 5%;
+  }
+  
+  .btn-login {
+    padding: 1.5%;
+    width: 25%;
+    font-size: 100%;
+  }
+
   #form {
-    font-size: 130%;
+    font-size: 170%;
     height: 40%;
     width: 65%;
     border-radius: 7%;
-    padding: 6% 15% 6% 15%;
+    padding: 3% 8% 5% 13%;
   }
 
   input[type="text"] {
     width: 90%;
-    height: 12%;
-    font-size: 80%;
+    height: 14%;
+    font-size: 85%;
   }
 
   input[type="number"] {
     width: 90%;
-    height: 12%;
-    font-size: 80%;
+    height: 14%;
+    font-size: 85%;
   }
 
   p {
-    font-size: 120%;
+    font-size: 140%;
   }
 
   #btnValidate {
-  padding: 1%;
-  width: 30%;
-  height: 5%;
-  font-size: 120%;
-  margin-top: 7%;
+  padding: 2%;
+  width: 35%;
+  height: 6%;
+  font-size: 150%;
+  margin-top: 5%;
+  margin-left: 15%;
   }
 
   #cardResult {
-  width: 80%;
+  width: 75%;
+  margin-bottom: -2%;
   }
 
   .card {
-  font-size: 120%;
+  font-size: 168%;
   letter-spacing: 5%;
   line-height: 5%;
   padding-left: 8%;
@@ -286,6 +303,6 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   #card-chip img {
-  width: 170%;
+  width: 180%;
   }
 }
