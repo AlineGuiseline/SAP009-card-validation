@@ -207,3 +207,85 @@ input[type="number"]::-webkit-inner-spin-button {
 #footer-heart {
   color: #C2CFF5;
 }
+
+@media screen and (min-width: 1800px) {
+  
+  body {
+    padding-bottom: 1%;
+  }
+
+  #candle-logo {
+    width: 5%;
+    height: 10%;
+    position: absolute;
+    margin-left: 7%;
+    margin-top: -1.6%;
+    transition: transform .2s;
+  }
+
+  #candle-logo:hover {
+    transform: scale(1.1);
+  }
+
+  #form {
+    font-size: 130%;
+    height: 40%;
+    width: 65%;
+    border-radius: 7%;
+    padding: 6% 15% 6% 15%;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    height: 12%;
+    font-size: 80%;
+  }
+
+  input[type="number"] {
+    width: 90%;
+    height: 12%;
+    font-size: 80%;
+  }
+
+  p {
+    font-size: 120%;
+  }
+
+  #btnValidate {
+  padding: 1%;
+  width: 30%;
+  height: 5%;
+  font-size: 120%;
+  margin-top: 7%;
+  }
+
+  #cardResult {
+  width: 80%;
+  }
+
+  .card {
+  font-size: 120%;
+  letter-spacing: 5%;
+  line-height: 5%;
+  padding-left: 8%;
+  padding-right: 10%;
+  }
+
+  #card-number {
+  margin: 6% 35% 0 0%;
+  width: 87%;
+  }
+
+  #card-name {
+  width: 86%;
+  }
+
+  .chip {
+  margin-left: 90%;
+  margin-top: 2%;
+  }
+
+  #card-chip img {
+  width: 170%;
+  }
+}
