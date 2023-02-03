@@ -207,3 +207,102 @@ input[type="number"]::-webkit-inner-spin-button {
 #footer-heart {
   color: #C2CFF5;
 }
+
+@media screen and (min-width: 1500px) {
+  
+  body {
+    padding-bottom: 1%;
+  }
+
+  #candle-logo {
+    width: 5%;
+    height: 10%;
+    position: absolute;
+    margin-left: 7%;
+    margin-top: -1.7%;
+    transition: transform .2s;
+  }
+
+  #candle-logo:hover {
+    transform: scale(1.1);
+  }
+
+  .header-links {
+    margin: 2% 0 0 57%;
+    font-size: 140%;
+  }
+  
+  .individual-links {
+    margin-right: 5%;
+  }
+  
+  .btn-login {
+    padding: 1.5%;
+    width: 25%;
+    font-size: 100%;
+  }
+
+  #form {
+    font-size: 170%;
+    height: 40%;
+    width: 65%;
+    border-radius: 7%;
+    padding: 3% 8% 5% 13%;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    height: 14%;
+    font-size: 85%;
+  }
+
+  input[type="number"] {
+    width: 90%;
+    height: 14%;
+    font-size: 85%;
+  }
+
+  p {
+    font-size: 140%;
+  }
+
+  #btnValidate {
+  padding: 2%;
+  width: 35%;
+  height: 6%;
+  font-size: 150%;
+  margin-top: 5%;
+  margin-left: 15%;
+  }
+
+  #cardResult {
+  width: 75%;
+  margin-bottom: -2%;
+  }
+
+  .card {
+  font-size: 168%;
+  letter-spacing: 5%;
+  line-height: 5%;
+  padding-left: 8%;
+  padding-right: 10%;
+  }
+
+  #card-number {
+  margin: 6% 35% 0 0%;
+  width: 87%;
+  }
+
+  #card-name {
+  width: 86%;
+  }
+
+  .chip {
+  margin-left: 90%;
+  margin-top: 2%;
+  }
+
+  #card-chip img {
+  width: 180%;
+  }
+}
