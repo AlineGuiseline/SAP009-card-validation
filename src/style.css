@@ -43,7 +43,7 @@ body {
   opacity: 0.5;
 }
 
-.btn-login {
+.btn-logout {
   cursor: pointer;
   border-radius: 20px;
   border: none;
@@ -55,11 +55,11 @@ body {
   font-size: 80%;
 }
 
-.btn-login:hover {
+.btn-logout:hover {
   opacity: 0.8;
 }
 
-.btn-login:active {
+.btn-logout:active {
   opacity: 0.7;
 }
 
@@ -313,4 +313,5 @@ input[type="number"]::-webkit-inner-spin-button {
   #card-chip img {
     width: 4rem;
   }
+
 }
