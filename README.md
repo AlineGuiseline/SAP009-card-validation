@@ -30,29 +30,29 @@ Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
 A proposta do projeto era apresentar uma interface intuitiva e visualmente estimulante, com tons delicados e formas/fontes arredondadas, a fim de transparecer uma sensação de conforto e acolhimento.
 
-![Desktop](./project-print.png)
+![Desktop](./README/project-print.png)
 
 Para proporcionar maior dinâmica à plataforma, ao inserir os dados do cartão, é possível vê-los aparecendo, também, na réplica de cartão abaixo - um detalhe sutil, porém agradável aos olhos.
 
-![Mobile](./project-print-2.png)
+![Mobile](./README/project-print-2.png)
 
 Foram pensadas 4 situações possíveis para este contexto, bem como 4 respostas distintas da plataforma:
 
 1. O usuário não digitar os números do cartão
 
-![Mobile](./project-print-3.png)
+![Mobile](./README/project-print-3.png)
 
 2. O usuário digitar poucos números (abaixo de 13)
 
-![Mobile](./project-print-4.png)
+![Mobile](./README/project-print-4.png)
 
 3. O cartão do usuário estar inválido
 
-![Mobile](./project-print-5.png)
+![Mobile](./README/project-print-5.png)
 
 4. O cartão do usuário estar válido
 
-![Mobile](./project-print-6.png)
+![Mobile](./README/project-print-6.png)
 
 ## 3. Objetivos alcançados
 
